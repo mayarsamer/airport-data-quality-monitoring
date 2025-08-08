@@ -1,0 +1,15 @@
+[project]
+name = "airport-dq-monitor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "markdown2>=2.5.4",
+    "matplotlib>=3.10.5",
+    "numpy>=2.2.6",
+    "pandas>=2.3.1",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.42",
+    "streamlit>=1.48.0",
+]
