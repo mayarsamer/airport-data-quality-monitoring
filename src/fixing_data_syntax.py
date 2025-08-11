@@ -1,7 +1,7 @@
 #run this script only once
 import re
 
-# Read the broken SQL file
+# Read the broken SQL file (because theres no "" around the columns names)
 with open('MOCK_DATA (1).sql', 'r') as file:
     sql_script = file.read()
 
