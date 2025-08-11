@@ -209,7 +209,7 @@ def summary_stats(df):
 
 def main():
     # Load the dataset from the SQLite DB file and specified table
-    df = load_data('airport_data.db', 'MOCK_DATA')
+    df = load_data('../data/airport_data.db', 'MOCK_DATA')
     
     # Analyze missing data and get a summary with highlight display
     missing_summary= analyze_missing_values(df, threshold=10.0)

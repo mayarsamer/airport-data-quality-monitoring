@@ -5,7 +5,7 @@ import subprocess
 from analysis_tools import load_data, analyze_missing_values, detect_exact_duplicates, detect_duplicate_flight_numbers,detect_flight_duration_outliers, summary_stats,validate_data
 
 
-DB_PATH = "airport_data.db"
+DB_PATH = "../data/airport_data.db"
 TABLE_NAME = "MOCK_DATA"
 
 # --- Streamlit Page Setup ---

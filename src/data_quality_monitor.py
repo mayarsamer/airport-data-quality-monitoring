@@ -4,7 +4,7 @@ from analysis_tools import load_data, analyze_missing_values, detect_flight_dura
 
 def main():
 
-    db_path = "airport_data.db"
+    db_path = "../data/airport_data.db"
     table_name = "MOCK_DATA"
     df = load_data(db_path, table_name)
 
