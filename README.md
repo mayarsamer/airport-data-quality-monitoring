@@ -33,10 +33,9 @@ airport-DQ-monitor/
 
   Data/
   
-      │── fixing_data_syntax.py # script to fix the syntax of the .sql ile provided ## run only once
-      │── create_airport_DB.py # Script to create and populate SQLite DB from .sql file ## run only once 
-      │── MOCK_DATA_fixed.sql # Sample data in SQL format
-      │── airport_data.db # SQLite database file
+      │── create_airport_DB.py # Script to create and populate SQLite DB from .sql file ## already done 
+      │── MOCK_DATA_fixed.sql #  the data we're using in SQL format
+      │── airport_data.db # SQLite database file 
   src/
   
       │── analysis_tools.py # All reusable analysis functions
@@ -67,19 +66,12 @@ source .venv/bin/activate
 
 ```
 
-##  2️⃣ Create the Database
+##  2️⃣ change directory to src file
 
 ```bash
-python create_airport_DB.py  #(use MOCK_DATA_fixed.sql provided ) 
+cd src
 ```
 
-This will:
-
-Connect to airport_data.db
-
-Execute SQL from MOCK_DATA_fixed.sql
-
-Populate the table MOCK_DATA
 
 ## 3️⃣ run the streamlit dashboard to see all the analysis done on this data set and interact with it 
 
@@ -89,6 +81,7 @@ streamlit run streamlit_app.py
 at the end of the streamlit page you'll find a button that allows you generate an .md report that checks the quality of this data
 
 or you can just simply run data_quality_monitor.py and it will generate the report for you
+
 
 
 
